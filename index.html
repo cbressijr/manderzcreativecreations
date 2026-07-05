@@ -6,6 +6,7 @@
     <a href="#" onclick="showPage('home')">Home</a>
     <a href="#" onclick="showPage('shop')">Shop</a>
     <a href="#" onclick="showPage('cart')">Cart</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
   </nav>
 </header>
 
@@ -52,6 +53,35 @@
   <h2>Your Cart</h2>
   <div id="cart-items"></div>
 </section>
+
+<!-- CONTACT PAGE -->
+<section id="contact" class="page hidden">
+  <h2>Contact Us</h2>
+
+  <div class="contact-container">
+    <p>Have a question or want a custom order? Send us a message!</p>
+
+    <form action="https://formspree.io/f/mkolyzle" method="POST" class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Other Ways to Reach Us</h3>
+      <p>Email: <strong>manderzcreative@gmail.com</strong></p>
+      <p>Facebook: <strong>Manderz Creative Creations</strong></p>
+    </div>
+  </div>
+</section>
+
 
 <footer>
   <p>© 2024 Manderz Creative Creations</p>
