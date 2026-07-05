@@ -1,5 +1,3 @@
-scripts.js
-
 let cart = [];
 
 // Switch between pages
@@ -31,3 +29,4 @@ function displayCart() {
     .map(item => `<p>${item.name} - $${item.price}</p>`)
     .join("");
 }
+
