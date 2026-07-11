@@ -100,3 +100,13 @@ nav a {
   padding-top: 20px;
   border-top: 1px solid #ddd;
 }
+
+.product-card img {
+  width: 100%;
+  max-width: 250px;   /* controls how large the image can get */
+  height: auto;       /* keeps the correct proportions */
+  border-radius: 10px;
+  object-fit: cover;  /* crops nicely if needed */
+  display: block;
+  margin: 0 auto;
+}
