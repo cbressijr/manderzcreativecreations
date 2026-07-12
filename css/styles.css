@@ -1,268 +1,3 @@
-/* ===========================
-   GLOBAL
-=========================== */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #fafafa;
-  color: #333;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ===========================
-   HEADER + NAVIGATION
-=========================== */
-.site-header {
-  background: #333;
-  color: white;
-  padding: 15px 20px;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-/* Desktop nav */
-.nav-menu {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-/* Mobile hamburger */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* ===========================
-   HERO SECTION
-=========================== */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: #ffe6e6;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 10px auto;
-  line-height: 1.5;
-}
-
-/* ===========================
-   BUTTONS
-=========================== */
-.btn {
-  padding: 12px 24px;
-  background: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-/* ===========================
-   PAGE WRAPPER
-=========================== */
-.page {
-  padding: 20px;
-}
-
-.hidden {
-  display: none;
-}
-
-/* ===========================
-   PRODUCT GRID
-=========================== */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.product-card {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  max-width: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin: 0 auto 10px;
-}
-
-/* ===========================
-   CONTACT PAGE
-=========================== */
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-.contact-info {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
-  margin-top: 40px;
-}
-
-/* ===========================
-   MOBILE RESPONSIVE
-=========================== */
-@media (max-width: 700px) {
-
-  /* Header */
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background: #444;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-
-  .nav-menu a {
-    padding: 10px 0;
-    font-size: 1rem;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .logo {
-    font-size: 1.4rem;
-  }
-
-  /* Hero */
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 700px) {
-
-  /* Header */
-  .logo {
-    font-size: 1.6rem;
-  }
-
-  .nav-toggle {
-    font-size: 2rem;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background: #444;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-menu a {
-    font-size: 1.2rem;
-    padding: 14px 0;
-    display: block;
-  }
-
-  /* Hero */
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  /* Buttons */
-  .btn {
-    font-size: 1.1rem;
-    padding: 14px 26px;
-  }
-
-  /* Page spacing */
-  .page {
-    padding: 25px 15px;
-  }
-}
-
 @media (max-width: 700px) {
 
   /* Base text improvements */
@@ -288,11 +23,61 @@ footer {
     font-size: 1.2rem;
   }
 
+  /* Header */
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+    padding: 14px 0;
+    display: block;
+  }
+
+  /* Hero */
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 1.1rem;
+    padding: 14px 26px;
+  }
+
   /* Page spacing */
   .page,
-  .hero,
   .contact-container {
     padding-left: 18px;
     padding-right: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
