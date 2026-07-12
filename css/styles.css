@@ -263,3 +263,36 @@ footer {
   }
 }
 
+@media (max-width: 700px) {
+
+  /* Base text improvements */
+  body {
+    font-size: 1.05rem;
+    line-height: 1.55;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Page spacing */
+  .page,
+  .hero,
+  .contact-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
