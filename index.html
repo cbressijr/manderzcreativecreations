@@ -1,63 +1,60 @@
-<header class="site-header">
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/scripts.js"></script>
-
-  <div class="header-inner">
-    <h1 class="logo">Manderz Creative Creations</h1>
-
-    <!-- Mobile Hamburger -->
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      ☰
-    </button>
-
-    <nav class="nav-menu">
-      <a href="#" onclick="showPage('home')">Home</a>
-      <a href="#" onclick="showPage('shop')">Shop</a>
-      <a href="#" onclick="showPage('contact')">Contact</a>
-    </nav>
-  </div>
+<header>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <h1>Manderz Creative Creations</h1>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('shop')">Shop</a>
+    <!--<a href="#" onclick="showPage('cart')">Cart</a> -->
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </nav>
 </header>
 
+<!-- HOME PAGE -->
 <section id="home" class="page">
   <div class="hero">
     <h2>Handmade Shirts, Cards & Crafts</h2>
-
-    <p>Welcome to my site where custom crafts and great gift ideas come to life.</p>
-    <p>All orders are custom made and unique so products shown may not all be available.
-       Please reach out so we can custom make your gifts.</p>
-    <p>Shipping and handling costs may vary dependent on location and preferred time for delivery.</p>
-    <p>Thank you for visiting my site! We look forward to creating your gifts and making you or someone
-       special to you have a great day and wonderful surprise.</p>
-
     <p>Unique items made with care</p>
     <button class="btn" onclick="showPage('shop')">Shop Now</button>
   </div>
 </section>
 
+<!-- SHOP PAGE -->
 <section id="shop" class="page hidden">
   <h2>Shop Products</h2>
-
   <div class="product-grid">
+
     <div class="product-card">
-      <img src="images/customshirt1.jpg" alt="Shirt">
-      <h3>Custom Shirt</h3>
+      <img src="https://via.placeholder.com/200" alt="Shirt">
+      <h3>Custom Shirts</h3>
       <p>$25.00</p>
+      <!-- <button onclick="addToCart('Custom Shirt', 20)">Add to Cart</button> -->
     </div>
 
     <div class="product-card">
-      <img src="images/customcard1.jpg" alt="Card">
-      <h3>Handmade Card</h3>
+      <img src="https://imgur.com/a/manderz-creative-creations-yhD1EKx" alt="Card">
+      <h3>Handmade Cards</h3>
       <p>$12.00</p>
+      <!-- <button onclick="addToCart('Handmade Card', 5)">Add to Cart</button> -->
     </div>
 
     <div class="product-card">
-      <img src="images/decorativecraft1.jpg" alt="Craft">
-      <h3>Decorative Craft</h3>
+      <img src="https://via.placeholder.com/200" alt="Craft">
+      <h3>Decorative Crafts</h3>
       <p>$12.00 - $25.00</p>
+      <!-- <button onclick="addToCart('Decorative Craft', 12)">Add to Cart</button> -->
     </div>
+
   </div>
 </section>
 
+<!-- CART PAGE 
+<section id="cart" class="page hidden">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+</section>
+-->
+<!-- CONTACT PAGE -->
 <section id="contact" class="page hidden">
   <h2>Contact Us</h2>
 
@@ -85,6 +82,8 @@
   </div>
 </section>
 
+
 <footer>
   <p>© 2024 Manderz Creative Creations</p>
 </footer>
+
