@@ -30,14 +30,4 @@ function displayCart() {
     .join("");
 }
 
-/* SPARKLE TRAIL */
-document.addEventListener("mousemove", function(e) {
-  const sparkle = document.createElement("div");
-  sparkle.classList.add("cursor-sparkle");
-  sparkle.style.left = e.pageX + "px";
-  sparkle.style.top = e.pageY + "px";
-  document.body.appendChild(sparkle);
-
-  setTimeout(() => sparkle.remove(), 600);
-});
 
