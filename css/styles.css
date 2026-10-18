@@ -118,3 +118,29 @@ nav a {
   from { transform: scale(1); opacity: 1; }
   to { transform: scale(2); opacity: 0; }
 }
+
+/* 🎃 Full-page Halloween background */
+body {
+  background-image: src("images/Halloween.jpg"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* 🕸️ Overlay to keep text readable */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* adjust darkness here */
+  z-index: -1; /* stays behind all content */
+}
+
+/* 👻 Ensure text stays visible above overlay */
+body * {
+  position: relative;
+  z-index: 1;
+}
+
